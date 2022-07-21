@@ -1,0 +1,200 @@
+/* Poppins Font Import from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Global Styles... */
+
+:root {
+    --main-color: #E72127;
+    --hover-color: #E72127;
+    --hover-background-color: rgba(231, 33, 39, 0.8);
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Section Styles... */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid rgba(241, 228, 255, 0.5);
+}
+
+.logo-img {
+    width: 30%;
+}
+
+.menu-section {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin-right: 40px;
+    transition: 300ms ease-in-out;
+}
+
+.nav-menu ul li a, .menu-icons i {
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+.nav-menu ul li:hover {
+    margin-top: -5px;
+}
+
+.nav-menu ul li:hover a {
+    color: var(--hover-color);
+}
+
+.menu-icons i {
+    padding: 0 10px;
+    font-size: 18px;
+    transition: 300ms ease-in-out;
+}
+
+.menu-icons a:hover i {
+    color: var(--hover-color);
+    font-size: 20px;
+}
+
+
+/* Hero Section Styles... */
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content-section {
+    width: 45%;
+}
+
+.hero-title {
+    font-size: 55px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hero-text {
+    line-height: 1.7;
+    margin: 10px 0 40px 0;
+}
+
+.preebook-now-btn {
+    height: 48px;
+    width: 200px;
+    background-color: var(--main-color);
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: "Poppins";
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 4px 4px 7px rgba(58, 58, 58, 0.25);
+    transition: transform 600ms ease;
+}
+
+.preebook-now-btn:hover {
+    background-color: var(--hover-background-color);
+    transform: scale(1.1);
+}
+
+.hero-img-section {
+    position: relative;
+}
+
+.background-border {
+    height: 380px;
+    width: 380px;
+    border: 3px solid #F1E4FF;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    z-index: -1;
+}
+
+.hero-img {
+    width: 100%;
+    z-index: 2;
+    transition: 800ms ease;
+}
+
+.hero-img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Showcase Section Styles */
+
+.car-showcase-section {
+    height: 550px;
+    background-image: url("../images/car-showcase-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.showcase-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.showcase-content {
+    width: 40%;
+    margin: 0;
+}
+
+.showcase-title {
+    font-size: 50px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.showcase-text {
+    color: #161616;
+    padding-right: 5%;
+    margin: 10px 0 40px 0;
+    line-height: 1.8;
+}
+
+
+
+/* Brand Logos Section... */
+
+.brand-logos-section {
+    margin: 50px 0;
+}
+
+.brand-logos-container {
+    height: 100px;
+    border-top: 1px solid #F1E4FF;
+    border-bottom: 1px solid #F1E4FF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
