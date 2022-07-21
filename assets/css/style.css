@@ -355,7 +355,7 @@ body {
 /* Footer Section */
 
 .footer-section {
-    background-color: #ffcccfbb;
+    background-color: var(--hover-color);
 }
 
 .footer-container {
@@ -371,11 +371,13 @@ body {
     font-size: 30px;
     text-align: center;
     margin: 0;
+    color: white;
 }
 
 .footer-text {
     line-height: 1.8;
     text-align: center;
+    color: #D6D6D6;
 }
 
 .footer-social-section ul {
@@ -383,13 +385,167 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 13px;
+    margin: 0;
 }
 
 .footer-social-section ul li {
     font-size: 35px;
+    transition: 300ms ease;
+}
+
+.footer-social-section ul li:hover {
+    margin-top: -20px;
 }
 
 .footer-social-section ul li a {
-    color: black;
+    color: #EFEFEF;
+}
+
+.footer-social-section ul li:hover a {
+    color: white;
+}
+
+
+
+
+
+/* Responsive Media Query Styles */
+
+@media screen and (max-width: 576px) {
+    .header-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 125px;
+    }
+
+    .menu-section {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo-section {
+        text-align: center;
+    }
+
+    .nav-menu ul {
+        padding: 0;
+    }
+
+    .nav-menu ul li {
+        margin-right: 26px;
+    }
+
+    .menu-icons i {
+        padding: 0;
+    }
+
+    /* Hero Section... */
+
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-content-section {
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .background-border {
+        height: 220px;
+        width: 230px;
+        top: 20px;
+        left: 110px;
+    }
+    .hero-img:hover {
+        margin: 20px 0;
+    }
+
+
+    /* Brand Logos Section... */
+
+    
+    .brand-logos-container {
+        
+    }
+
+    .brand-logos-container {
+        flex-wrap: wrap;
+        height: 150px;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .brand-logos-container img {
+        width: 90%;
+    }
+
+    /* Populer Collections Section... */
+
+    .collections {
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Car Showcase Section... */
+
+    .car-showcase-section {
+        background-position: top center;
+    }
+
+    .showcase-content {
+        width: 100%;
+    }
+
+    .showcase-title {
+        font-size: 27px;
+    }
+
+    .showcase-text {
+        font-size: 15px;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .car-showcase-section {
+        height: 450px;
+    }
+
+
+    /* Featured Section... */
+
+    .featured-container {
+        flex-direction: column;
+    }
+
+    .featured-img-section {
+        width: 100%;
+    }
+
+    .featured-img {
+        width: 100%;
+    }
+
+    .featured-content {
+        width: 100%;
+    }
+
+
+
+    .footer-social-section ul {
+        padding-left: 0;
+    }
 }
