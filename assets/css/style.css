@@ -387,6 +387,7 @@ body {
     align-items: center;
     gap: 13px;
     margin: 0;
+    padding-left: 0;
 }
 
 .footer-social-section ul li {
@@ -472,11 +473,6 @@ body {
 
     /* Brand Logos Section... */
 
-    
-    .brand-logos-container {
-        
-    }
-
     .brand-logos-container {
         flex-wrap: wrap;
         height: 150px;
@@ -543,9 +539,232 @@ body {
         width: 100%;
     }
 
+}
 
 
-    .footer-social-section ul {
-        padding-left: 0;
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    
+    .header-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 125px;
+    }
+
+    .menu-section {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo-section {
+        text-align: center;
+    }
+
+    .nav-menu ul {
+        padding: 0;
+    }
+
+    .nav-menu ul li {
+        margin-right: 40px;
+    }
+
+    .menu-icons i {
+        padding: 10px;
+    }
+
+    /* Hero Section... */
+
+    .hero-container {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .hero-content-section {
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 45px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .background-border {
+        height: 300px;
+        width: 300px;
+        top: 20px;
+        left: 210px;
+    }
+    .hero-img:hover {
+        margin: 20px 0;
+    }
+
+    .brand-logos-container {
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .car-showcase-section {
+        background-position: left center;
+    }
+
+    .showcase-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .showcase-content {
+        width: 100%;
+    }
+
+    .showcase-text {
+        font-size: 17px;
+    }
+
+    .showcase-text {
+        font-size: 17px;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .featured-container {
+        flex-direction: column;
+    }
+
+    .featured-img-section {
+        width: 100%;
+    }
+
+    .featured-content {
+        width: 100%;
+    }
+
+    .featured-img {
+        width: 100%;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    .logo-section {
+        width: 20%;
+    }
+
+    .logo-img {
+        width: 75%;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        padding-top: 50px
+    }
+
+    .hero-content-section {
+        width: 100%;
+    }
+
+    .background-border {
+        height: 400px;
+        width: 400px;
+        left: 300;
+    }
+
+    .hero-img {
+        width: 110%;
+    }
+
+    .collections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .car-showcase-section {
+        background-position: center right;
+    }
+
+    .showcase-content {
+        width: 85%;
+    }
+
+    .showcase-text {
+        font-size: 17px;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .featured-img-section {
+        width: 100%;
+    }
+
+    
+    .featured-img {
+        width: 90%;
+    }
+
+    .featured-container {
+        flex-direction: column;
+    }
+
+    .featured-content{
+        width: 100%;
+    }
+
+    .featured-heading {
+        font-size: 35px;
+    }
+
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+   
+    .logo-section {
+        width: 20%;
+    }
+
+    .logo-img {
+        width: 75%;
+    }
+
+    .hero-container {
+        padding-top: 50px
+    }
+
+    .hero-content-section {
+        width: 70%;
+    }
+
+    .hero-title {
+        font-size: 45px;
+    }
+
+    .background-border {
+        height: 290px;
+        width: 290px;top: 10px;
+        left: 150px;
+    }
+
+    .showcase-content {
+        width: 70%;
+    }
+
+    .showcase-text {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+}
+
